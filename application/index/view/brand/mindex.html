@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>美女图片_性感美女_高清性感美女图片,写真，妹子图-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，性感美女图片，妹子图，美女图片 高清，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片大全网站，分享优美高清美女图片内容、集性感美女、美女写真、妹子图、美女动态图、美女艺术摄影、美女明星模特图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/mhead" /}
+<body class="has-panel">
+<div class="header">
+    <i id="panelSwitch" class="icon-nav"></i>
+    <h1>{$brand.brand_name}</h1>
+    <a class="avatar" href="{$site.m_url}"><img src="__IMG__/rlogo.png"></a>
+</div>
+<div class="cl"><img src="__UPLOAD__/brand/{$brand.nick_name}/mbanner.jpg" style="width:100%;"></div>
+<div class="keywordtopsmw">
+    <div class="txtcont">
+        {$brand.brand_des}
+    </div>
+</div>
+<div class="body line">
+    <ul class="works-nav">
+        <li class="pos"><a href="javascript:;" id="tag"><span>共{$count}组</span></a></li>
+        <li class="pos"><a href="javascript:;" id="cation"><span>相关推荐</span><i class="icon-down"></i></a></li>
+        <li class="pos"><a href="javascript:;" id="attribute"><span>热度：33034</span></a></li>
+    </ul>
+    <script>
+        var num = Math.floor(Math.random()*10000);
+        $('#attribute span').html(num);
+    </script>
+</div>
+<div class="body pos">
+    <ul class="list cl">
+        {volist name="taotus" id="vo"}
+        <li>
+            <a href="/taotu/{$vo.id}">
+                <img lazysrc="__UPLOAD__/taotu/{$vo.id}/thumb.jpg" title="{$vo.title}">
+                <div class="txtbts">{$vo.title}</div>
+            </a>
+        </li>
+        {/volist}
+    </ul>
+    <div class="page cl">
+        {$taotus->render()}
+    </div>
+</div>
+<div class="works-li" style="display:none; " id="sub-list">
+    <div class="header"><h1>相关专辑推荐</h1><i class="icon-close"></i></div>
+    <div class="body">
+        <ul class="works-subnav">
+            {volist name="brands" id="vo"}
+            <li>
+                <a href="/brand/{$vo.id}" class="{$vo.brand_name==$brand.brand_name?'active':''}">{$vo.brand_name}</a>
+            </li>
+            {/volist}
+        </ul>
+    </div>
+</div>
+<script>
+    $(function(){
+        $('#cation').click(function(){
+            $('#tag-list').hide();
+            $('#cate-list').hide();
+            $('#sub-list').show();
+            $('html').css('overflow','hidden');
+        });
+        $('.icon-close').click(function(){
+            $('.works-li').hide();
+            $('html').css('overflow','auto');
+        });
+    });
+</script>
+{include file="index@pub/mfoot" /}

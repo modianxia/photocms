@@ -1,0 +1,72 @@
+{include file="admin@pub/head" /}
+
+<body data-type="widgets">
+<script src="__JS__/theme.js"></script>
+<div class="am-g tpl-g">
+    <!-- 头部 -->
+    {include file="admin@pub/nav" /}
+    <!-- 侧边导航栏 -->
+    {include file="admin@pub/menu" /}
+
+    <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="container-fluid am-cf">
+            <div class="row">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
+                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span>
+                        套图编辑
+                        <small>brand edit</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget am-cf">
+            <div class="widget-head am-cf">
+                <div class="widget-title am-fl">套图编辑</div>
+            </div>
+            <div class="widget-body am-fr">
+                <form action="{:url('taotu/editsave')}" method="post" class="am-form tpl-form-line-form">
+                    <input type="hidden" name="id" value="{$taotu.id}">
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">套图名称 <span
+                                class="tpl-form-line-small-title">title</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="title" value="{$taotu.title}">
+                            <small>输入套图名称</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">套图标签 <span
+                                class="tpl-form-line-small-title">tags</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="tags" value="{$taotu.tags}">
+                            <small>输入套图标签</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">套图来源 <span
+                                class="tpl-form-line-small-title">source url</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="source_url" value="{$taotu.source_url}">
+                            <small>输入套图来源</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <input type="submit" value="保存" class="am-btn am-btn-primary tpl-btn-bg-color-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+{include file="admin@pub/foot" /}

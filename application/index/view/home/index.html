@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>美女图片_性感高清美女模特图片写真-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，性感美女图片，妹子图，美女图片 高清，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片大全网站，分享优美高清美女图片内容、集性感美女、美女写真、妹子图、美女动态图、美女艺术摄影、美女明星模特图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/head" /}
+<body>
+{include file="index@pub/nav" /}
+
+<div class="slider">
+    <div class="bd">
+        <div class="tempWrap" style="overflow:hidden; position:relative; width:5415px">
+            <div style="width: 15162px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -5415px;">
+                <ul style="width: 15162px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -5415px;">
+                    {volist name="lunbo" id="vo"}
+                    <li class="txt_top" style="float: left; width: 1083px;">
+                        <a href="/brand/{$vo.id}">
+                            <img src="__UPLOAD__/brand/{$vo.nick_name}/banner.jpg" alt="{$vo.brand_name}写真集">
+                            <div class="txtshow">{$vo.brand_name}写真集欣赏</div>
+                        </a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+        <div class="pnBtn prev">
+            <span class="blackBg"></span>
+            <a class="arrow" href="javascript:void(0)" style="display: none;"></a>
+        </div>
+        <div class="pnBtn next">
+            <span class="blackBg"></span>
+            <a class="arrow" href="javascript:void(0)" style="display: none;"></a>
+        </div>
+    </div>
+</div>
+<div class="index_listc">
+    <div class="indexTitle" data-unuse="1">
+        <span class="indexTitleT f20 yh c666">套图推荐</span>
+        <div class="itMore" data-unuse="1">
+            <a href="/taotu/newest" class="imgitem" target="_blank">更多更新</a>
+        </div>
+    </div>
+    <div class="camWholeBox borderTop">
+        <ul class="layout camWholeBoxUl">
+            {volist name="taotus" id="vo"}
+            <li class="min-h-imgall">
+                <a href="/taotu/{$vo.id}" class="itemimg" title="{$vo.title}" target="_blank">
+                    <img src="__UPLOAD__/taotu/{$vo.id}/thumb.jpg" width="196" height="265"
+                         alt="{$vo.title}">
+                    <div class="itemset-num">
+                        <span class="num">{$vo['count']}</span>
+                        <span class="text">张</span>
+                    </div>
+                </a>
+                <div class="camLiCon">
+                    <div class="camLiTitleC hot">
+                        <p><a href="/taotu/{$vo.id}" title="{$vo.title}" target="_blank">{$vo.title}</a>
+                        </p>
+                    </div>
+                    <div class="camLiDes">
+                        <span class="mr3"><i class="icon iconfont fontico"></i>{$vo.update_time}</span>
+                        <span class="mr3" id="hot"><i class="icon iconfont fontico"></i></span>
+                        <script>
+                            var num = Math.floor(Math.random() * 10000);
+                            $('#hot').text(num);
+                        </script>
+                    </div>
+                </div>
+            </li>
+            {/volist}
+        </ul>
+    </div>
+</div>
+<div style="width:1083px; height:90px; margin:10px auto;">
+    <script src=""></script>
+    <div style="width:1082px;height:88px;border:0px dotted #ccc;text-align: center;line-height: 88px;background-color: #FFF;color: #333;font-family: 微软雅黑 Light;font-size: 20px;-moz-border-radius:4px;-webkit-border-radius: 4px;">
+        精品广告位 ID:5 1080x90
+    </div>
+</div>
+{volist name="brands" id="cate"}
+<div class="index-box2 pb10" id="JS-news">
+    <div class="box2 layout">
+        <div class="indexTitle b-1-f4f4f4 mb20" data-unuse="1">
+                <span class="indexTitleT f20 yh c666">
+                    <a href="/brandlistall/{$key}" target="_blank">
+                       {switch name="key"}
+                            {case value="jigou"}品牌大全{/case}
+                            {case value="meinvdalei"}美女大全{/case}
+                            {case value="diyufenbu"}各国风情{/case}
+                            {case value="shencaitizheng"}各类身材{/case}
+                            {case value="zhuozhuangleixing"}着装特色{/case}
+                            {case value="tedingchangjing"}特定场景{/case}
+                            {case value="mingxingmote"}明星模特{/case}
+                            {case value="tedingleixing"}特定类型{/case}
+                        {/switch}
+                    </a>
+                </span>
+            <div class="itMore" data-unuse="1">
+                <a href="/brandlistall/{$key}" class="title_rbt" target="_blank">查看全部</a>
+            </div>
+        </div>
+        <div class="tab-box2">
+            <div class="tab-box2-nr news1 layout" style="display:block;">
+                <ul class="fn-clear news-list" id="list1">
+                    {volist name="cate" id="vo"}
+                    <li>
+                        <a href="/brand/{$vo.id}" class="imgitem">
+                            <img src="__UPLOAD__/brand/{$vo.nick_name}/thumb.jpg" alt="{$vo.brand_name}">
+                            <span class="h2">{$vo.brand_name}</span>
+                        </a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{/volist}
+
+{include file="index@pub/foot" /}

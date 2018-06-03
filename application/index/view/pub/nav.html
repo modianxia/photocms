@@ -1,0 +1,35 @@
+<div class="pic_index_headc">
+    <div class="secondaryHeader">
+        <div class="logo" style="cursor:pointer">
+            <a href="{$site.pc_url}" alt="{$site.pc_url}"></a></div>
+        <!-- cheny start-->
+        <div class="menu-wrapp">
+            <div class="menucat">
+                <a href="{$site.pc_url}" class="login-button">本站首页</a>
+            </div>
+            <div class="menucat" _t_nav="meinv">
+                <a href="/brandlistall/meinvdalei">美女大全</a>
+                <img class="navhot" src="__IMG__/navhot.png">
+            </div>
+            <div class="menucat">
+                <a href="/brandlistall/mingxingmote" class="login-button">明星模特</a>
+            </div>
+            <div class="menucat">
+                <a href="/brandlistall/jigou" class="login-button">品牌大全</a>
+            </div>
+            <div class="menucat">
+                <a href="/brand/newest" class="login-button">最新专辑</a>
+            </div>
+        </div>
+        <!-- cheny end -->
+        <div class="search_start">
+            <div class="search_cont" style="width: 90px;">
+                <form name="topSearchForm" action="{:url('home/search')}" method="get">
+                    <input type="text" name="keywords" class="in_search" autocomplete="off" value="搜索">
+                    <input type="submit" class="in_submit">
+                    <i class="icon-search icon iconfont"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

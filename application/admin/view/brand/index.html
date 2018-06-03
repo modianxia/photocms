@@ -1,0 +1,78 @@
+{include file="admin@pub/head" /}
+
+<body data-type="widgets">
+<script src="__JS__/theme.js"></script>
+<div class="am-g tpl-g">
+    <!-- 头部 -->
+    {include file="admin@pub/nav" /}
+    <!-- 侧边导航栏 -->
+    {include file="admin@pub/menu" /}
+    <div class="tpl-content-wrapper">
+
+        <div class="container-fluid am-cf">
+            <div class="row">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
+                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 分类管理
+                        <small>brand list</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget am-cf">
+            <div class="widget-body  widget-body-lg am-fr">
+                <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+                    <div class="am-form-group">
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group am-btn-group-xs">
+                                <a href="{:url('brand/add')}" target="_blank" class="am-btn am-btn-default am-btn-success">
+                                    <span class="am-icon-plus"></span>
+                                    新增
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="am-scrollable-horizontal ">
+                    <table width="100%" class="am-table am-table-compact am-text-nowrap tpl-table-black "
+                           id="example-r">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>分类名称</th>
+                            <th>分类拼音</th>
+                            <th>所属大类</th>
+                            <th>大类拼音</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="brands" id="vo"}
+                        <tr class="gradeX">
+                            <td>{$vo.id}</td>
+                            <td>{$vo.brand_name}</td>
+                            <td>{$vo.nick_name}</td>
+                            <td>{$vo.cate_des}</td>
+                            <td>{$vo.cate}</td>
+                            <td>
+                                <div class="tpl-table-black-operation">
+                                    <a href="edit?id={$vo.id}" target="_blank">
+                                        <i class="am-icon-pencil"></i> 编辑
+                                    </a>
+                                    <a href="javascript:if(confirm('确实要删除吗?'))location='delete?id={$vo.id}'" class="tpl-table-black-operation-del">
+                                        <i class="am-icon-trash"></i> 删除
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        {/volist}
+                        <!-- more data -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        {$brands->render()}
+    </div>
+</div>
+{include file="admin@pub/foot" /}

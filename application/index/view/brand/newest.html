@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>最新专辑列表-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，性感美女图片，妹子图，美女图片 高清，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片大全网站，分享优美高清美女图片内容、集性感美女、美女写真、妹子图、美女动态图、美女艺术摄影、美女明星模特图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/head" /}
+<body>
+{include file="index@pub/nav" /}
+<div class="index_listc">
+    <div class="longTop">您现在的位置 &gt;
+        <a href="{$site.pc_url}">首页</a> &gt;
+        <a href="/brand/newest">最新专辑</a>
+    </div>
+    <div class="activeBox borderTop" id="load-img">
+        <div class="pos__1 splist-wrapp">
+            <ul class="picpos__1 activeList small layout pb30">
+                {volist name="brands" id="vo"}
+                <li><a href="/brand/{$vo.id}" class="activeListMore" target="_blank"></a>
+                    <div class="alT">
+                        <div class="alTBox"><a href="/brand/{$vo.id}" target="_blank">{$vo.brand_name}</a></div>
+                        <div class="c999 yh f14">{$vo.create_time}</div>
+                    </div>
+                    <a href="/brand/{$vo.id}" title="{$vo.brand_name}" target="_blank">
+                        <img src="__UPLOAD__/brand/{$vo.nick_name}/mbanner.jpg" alt="{$vo.brand_name}" class="alContentImg" style="display: inline;">
+                    </a>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+    <div class="bigpages">
+        {$brands->render()}
+    </div>
+</div>
+{include file="index@pub/foot" /}

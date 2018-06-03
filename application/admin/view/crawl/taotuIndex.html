@@ -1,0 +1,80 @@
+{include file="admin@pub/head" /}
+
+<body data-type="widgets">
+<script src="__JS__/theme.js"></script>
+<div class="am-g tpl-g">
+    <!-- 头部 -->
+    {include file="admin@pub/nav" /}
+    <!-- 侧边导航栏 -->
+    {include file="admin@pub/menu" /}
+
+    <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="container-fluid am-cf">
+            <div class="row">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
+                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 采集
+                        <small>59pic套图采集</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget am-cf">
+            <div class="widget-head am-cf">
+                <div class="widget-title am-fl">采集配置</div>
+            </div>
+            <div class="widget-body am-fr">
+                <form action="{:url('crawl/taotu')}" method="get" class="am-form tpl-form-line-form">
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">规则网址 <span
+                                class="tpl-form-line-small-title">url</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="url" value="{$url}">
+                            <small>变量使用{i}</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">起始页 <span
+                                class="tpl-form-line-small-title">url</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="start" value="{$start}">
+                            <small>输入数字</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">结束页 <span
+                                class="tpl-form-line-small-title">url</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="end" value="{$start}">
+                            <small>输入数字</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">分类 <span
+                                class="tpl-form-line-small-title">cate</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="cate" value="">
+                            <small>输入分类</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <input type="submit" value="开始采集" class="am-btn am-btn-primary tpl-btn-bg-color-success">
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+{include file="admin@pub/foot" /}

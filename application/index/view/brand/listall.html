@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>美女图片_性感高清美女模特图片写真-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片写真大全网站，分享优美高清美女图片内容、集性感美女、模特写真、明星图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/head" /}
+<body>
+{include file="index@pub/nav" /}
+{include file="index@pub/middle" /}
+
+<div class="index_listc">
+    <div class="camTitle">
+        <div class="camNavC">
+            <a href="/brandlistall/jigou" {$cate=='jigou'?'class="selected"':''}>品牌大全</a>
+            <a href="/brandlistall/meinvdalei" {$cate=='meinvdalei'?'class="selected"':''}> 美女套图</a>
+            <a href="/brandlistall/diyufenbu" {$cate=='diyufenbu'?'class="selected"':''}>地域风情</a>
+            <a href="/brandlistall/shencaitizheng" {$cate=='shencaitizheng'?'class="selected"':''}>各类身材</a>
+            <a href="/brandlistall/zhuozhuangleixing" {$cate=='zhuozhuangleixing'?'class="selected"':''}>着装特色</a>
+            <a href="/brandlistall/tedingchangjing" {$cate=='tedingchangjing'?'class="selected"':''}>特定场景</a>
+            <a href="/brandlistall/mingxingmote" {$cate=='mingxingmote'?'class="selected"':''}>明星模特</a>
+            <a href="/brandlistall/tedingleixing" {$cate=='tedingleixing'?'class="selected"':''}>特定类型</a>
+        </div>
+    </div>
+    <div class="longTop">您现在的位置 &gt; <a href="{$site.pc_url}">首页</a> &gt; <a href="{$site.pc_url}/brand">{$cate_name}</a>
+        &gt;
+    </div>
+    <div class="pos_16_1 camWholeBox borderTop" id="load-img">
+        <ul class="picpos_16_1 layout camMoteBoxUl">
+            {volist name="brands" id="vo"}
+            <li>
+                <a href="/brand/{$vo.id}" class="itemimg" title="" target="_blank">
+                    <img src="__UPLOAD__/brand/{$vo.nick_name}/thumb.jpg" width="115" height="135" alt="{$vo.brand_name}">
+                </a>
+                <div class="camLiCon">
+                    <div class="camLiTitleMotoC hot">
+                        <p><a href="{$site.pc_url}/{$vo.nick_name}" title="" target="_blank">{$vo.brand_name}</a></p>
+                    </div>
+                    <div class="camLiDes_mxmt"><i class="icon iconfont fontico"></i>{$vo.update_time}</div>
+                </div>
+            </li>
+            {/volist}
+        </ul>
+    </div>
+</div>
+<!--广告双拼底部-->
+{include file="index@pub/foot" /}

@@ -1,0 +1,135 @@
+{include file="admin@pub/head" /}
+
+<body data-type="widgets">
+<script src="__JS__/theme.js"></script>
+<div class="am-g tpl-g">
+    <!-- 头部 -->
+    {include file="admin@pub/nav" /}
+    <!-- 侧边导航栏 -->
+    {include file="admin@pub/menu" /}
+
+    <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="container-fluid am-cf">
+            <div class="row">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
+                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span>
+                        网站设置
+                        <small>brand edit</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget am-cf">
+            <div class="widget-head am-cf">
+                <div class="widget-title am-fl">网站设置</div>
+            </div>
+            <div class="widget-body am-fr">
+                <form action="{:url('site/editsave')}" method="post" class="am-form tpl-form-line-form">
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">网站名称 <span
+                                class="tpl-form-line-small-title">site name</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="site_name" value="{$site.site_name}">
+                            <small>输入网站名称</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">pc网址 <span
+                                class="tpl-form-line-small-title">pc url</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="pc_url" value="{$site.pc_url}">
+                            <small>输入pc网址</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">移动端网址 <span
+                                class="tpl-form-line-small-title">mobile url</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="m_url" value="{$site.m_url}">
+                            <small>输入移动端网址</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">pc logo <span
+                                class="tpl-form-line-small-title">pc logo</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="pc_logo" value="{$site.pc_logo}">
+                            <small>pc logo地址</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">mobile logo <span
+                                class="tpl-form-line-small-title">mobile logo</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="m_logo" value="{$site.m_logo}">
+                            <small>mobile logo地址</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">网站标题 <span
+                                class="tpl-form-line-small-title">site title</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="title" value="{$site.title}">
+                            <small>site title</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">网站关键词 <span
+                                class="tpl-form-line-small-title">site keyword</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="keyword" value="{$site.keyword}">
+                            <small>site keyword</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">网站描述 <span
+                                class="tpl-form-line-small-title">site description</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="description" value="{$site.description}">
+                            <small>site description</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">联系邮箱 <span
+                                class="tpl-form-line-small-title">mobile logo</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="email" value="{$site.email}">
+                            <small>email</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">icp备案号 <span
+                                class="tpl-form-line-small-title">mobile logo</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="m_logo" value="{$site.icp}">
+                            <small>icp</small>
+                        </div>
+                    </div>
+
+
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <input type="submit" value="保存" class="am-btn am-btn-primary tpl-btn-bg-color-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+{include file="admin@pub/foot" /}

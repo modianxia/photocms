@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>美女图片_性感美女_高清性感美女图片,写真，妹子图-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，性感美女图片，妹子图，美女图片 高清，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片大全网站，分享优美高清美女图片内容、集性感美女、美女写真、妹子图、美女动态图、美女艺术摄影、美女明星模特图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/mhead" /}
+<body class="has-panel">
+<div class="header">
+    <i id="panelSwitch" class="icon-nav"></i>
+    <h1>{$cate_name}</h1>
+    <a class="avatar" href="{$site.m_url}"><img src="__IMG__/rlogo.png"></a>
+</div>
+<div class="body line">
+    <ul class="works-nav">
+        <li class="pos"><a href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+        <li class="pos"><a href="javascript:;" id="cation"><span>分类标签</span><i class="icon-down"></i></a></li>
+        <li class="pos"><a href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+    </ul>
+</div>
+
+<div class="cl" style="margin:10px 0 10px 10px;color:#2b2b2b;">位置 &gt;
+    <a href="{$site.m_url}" style="color:#2b2b2b;">首页</a> &gt; <a href="/brandlistall/{$cate}">{$cate_name}</a> >
+</div>
+<div class="body pos">
+    <ul class="list cl">
+        {volist name="brands" id="vo"}
+        <li>
+            <a href="/brand/{$vo.id}">
+                <img lazysrc="__UPLOAD__/brand/{$vo.nick_name}/thumb.jpg" alt="{$vo.brand_name}">
+                <div class="txtbts">{$vo.brand_name}</div>
+            </a>
+        </li>
+        {/volist}
+    </ul>
+    <div class="page cl"></div>
+</div>
+
+<!-- 弹出选项 -->
+<div class="works-li" style="display:none; " id="sub-list">
+    <div class="header">
+        <h1>分类标签</h1>
+        <i class="icon-close"></i></div>
+    <div class="body">
+        <ul class="works-subnav">
+            <li><a href="/brandlistall/jigou"> 品牌大全</a></li>
+            <li><a href="/brandlistall/meinvdalei"> 美女套图</a></li>
+            <li><a href="/brandlistall/diyufenbu"> 地域风情</a></li>
+            <li><a href="/brandlistall/shencaitizheng"> 各类身材</a></li>
+            <li><a href="/brandlistall/zhuozhuangleixing"> 着装特色</a></li>
+            <li><a href="/brandlistall/tedingchangjing"> 特定场景</a></li>
+            <li><a href="/brandlistall/mingxingmote"> 明星模特</a></li>
+            <li><a href="/brandlistall/tedingleixing"> 特定类型</a></li>
+        </ul>
+        <div style="width:100%; height:100px;"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#cation').click(function () {
+            $('#sub-list').show();
+            $('html').css('overflow', 'hidden');
+        });
+
+        $('.icon-close').click(function () {
+            $('.works-li').hide();
+            $('html').css('overflow', 'auto');
+        });
+    });
+</script>
+{include file="index@pub/mfoot" /}

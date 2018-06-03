@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>最新专辑列表-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，性感美女图片，妹子图，美女图片 高清，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片大全网站，分享优美高清美女图片内容、集性感美女、美女写真、妹子图、美女动态图、美女艺术摄影、美女明星模特图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/mhead" /}
+<body class="has-panel">
+<div class="header">
+    <i id="panelSwitch" class="icon-nav"></i>
+    <h1>图片专辑</h1>
+    <a class="avatar" href="http://m.59pic.com/"><img src="__IMG__/rlogo.png"></a>
+</div>
+
+<ul class="keywordindexW cl">
+    {volist name="brands" id="vo"}
+    <li>
+        <a href="/brand/{$vo.id}">
+            <img lazysrc="__UPLOAD__/brand/{$vo.nick_name}/mbanner.jpg" title="{$vo.brand_name}">
+            <span class="bts">{$vo.brand_name}</span>
+        </a>
+    </li>
+    {/volist}
+</ul>
+<div class="page cl">
+    {$brands->render()}
+</div>
+{include file="index@pub/mfoot" /}

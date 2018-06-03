@@ -1,0 +1,116 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>美女图片_性感高清美女模特图片写真-{$site.site_name}</title>
+    <meta name="keywords" content="美女图片，性感美女，美女写真，性感美女图片，妹子图，美女图片 高清，美女图片大全">
+    <meta name="description" content="{$site.site_name}高清性感美女图片大全网站，分享优美高清美女图片内容、集性感美女、美女写真、妹子图、美女动态图、美女艺术摄影、美女明星模特图片等。图片分类清晰，让您一目了然找到喜欢的美女图片。">
+{include file="index@pub/mhead" /}
+<body class="has-panel">
+<div class="header">
+    <i id="panelSwitch" class="icon-nav"></i>
+    <h1>{$site.site_name}</h1>
+    <a class="avatar" href="http://m.59pic.92demo.com/"><img src="__IMG__/rlogo.png"></a>
+</div>
+
+<!-- 轮播图 -->
+<div class="swipe">
+    <ul id="slider">
+        {volist name="lunbo" id="vo"}
+        <li>
+            <a href="/brand/{$vo.id}">
+                <img src="__UPLOAD__/brand/{$vo.nick_name}/mbanner.jpg" alt="{$vo.brand_name}写真集"/>
+            </a>
+        </li>
+        {/volist}
+    </ul>
+    <div id="pagenavi">
+        <a href="javascript:;" class="active"></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+        <a href="javascript:;" class=""></a>
+    </div>
+</div>
+<script>
+    console = window.console || {dir: new Function(), log: new Function()};
+    var active = 0,
+        as = document.getElementById('pagenavi').getElementsByTagName('a');
+    for (var i = 0; i < as.length; i++) {
+        (function () {
+            var j = i;
+            as[i].onclick = function () {
+                t4.slide(j);
+                return false;
+            }
+        })();
+    }
+
+    var t4 = new TouchSlider({
+        id: 'slider', speed: 600, timeout: 6000, before: function (index) {
+            as[active].className = '';
+            active = index;
+            as[active].className = 'active';
+        }
+    });
+</script>
+<!-- 轮播图 END -->
+<div class="body line">
+    <ul class="nav">
+        <li><a href="/taotu/newest">最新更新</a></li>
+        <li><a href="/brandlistall/jigou">热门图集</a></li>
+        <li><a href="/brand/newest">最新专辑</a></li>
+    </ul>
+</div>
+
+<div class="body pos">
+
+    <div class="cl">
+        <div class="mod-title"><a href="/newupdate/" class="title_link">最新美女图片</a><a href="/newupdate/"
+                                                                                     class="title_more">查看更多></a></div>
+    </div>
+    <ul class="list cl">
+        {volist name="taotus" id="vo"}
+        <li>
+            <a href="/taotu/{$vo.id}">
+                <img src="__UPLOAD__/taotu/{$vo.id}/thumb.jpg" width="196" height="230" alt="{$vo.title}">
+                <div class="txtbts">{$vo.title}</div>
+            </a>
+        </li>
+        {/volist}
+    </ul>
+
+    {volist name="brands" id="cate"}
+    <div class="cl mtn">
+        <div class="mod-title">
+            <a href="/brandlistall/{$key}" class="title_link">
+                {switch name="key"}
+                {case value="jigou"}品牌大全{/case}
+                {case value="meinvdalei"}美女大全{/case}
+                {case value="diyufenbu"}各国风情{/case}
+                {case value="shencaitizheng"}各类身材{/case}
+                {case value="zhuozhuangleixing"}着装特色{/case}
+                {case value="tedingchangjing"}特定场景{/case}
+                {case value="mingxingmote"}明星模特{/case}
+                {case value="tedingleixing"}特定类型{/case}
+                {/switch}
+            </a>
+            <a href="/brand/newest" class="title_more" target="_blank">查看更多</a>
+        </div>
+    </div>
+
+    <ul class="list cl">
+        {volist name="cate" id="vo"}
+        <li>
+            <a href="/brand/{$vo.id}">
+                <img src="__UPLOAD__/brand/{$vo.nick_name}/thumb.jpg" alt="{$vo.brand_name}"/>
+                <div class="txtbts">{$vo.brand_name}</div>
+            </a>
+        </li>
+        {/volist}
+    </ul>
+    {/volist}
+
+</div>
+{include file="index@pub/mfoot" /}

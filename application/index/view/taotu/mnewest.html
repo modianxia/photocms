@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{$site.site_name}最新美女图片_top100</title>
+    <meta name="keywords" content="{$site.site_name}最新美女图片_top100">
+    <meta name="description" content="{$site.site_name}最新美女图片_top100。">
+{include file="index@pub/mhead" /}
+<body class="has-panel">
+<div class="header">
+    <i id="panelSwitch" class="icon-nav"></i>
+    <h1>最新更新T100</h1>
+    <a class="avatar" href="http://m.59pic.com/"><img src="__IMG__/rlogo.png"></a>
+</div>
+
+<div class="body line">
+    <ul class="works-nav">
+        <li class="pos"><a href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+        <li class="pos"><a href="javascript:;" id="cation"><span>分类标签</span><i class="icon-down"></i></a></li>
+        <li class="pos"><a href="#"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></a></li>
+    </ul>
+</div>
+<div class="cl" style="margin:0 6px 10px;color:#2b2b2b;">位置 &gt; <a href="{$site.m_url}" style="color:#2b2b2b;">首页</a> &gt; 最近更新</div>
+
+<div class="body pos">
+    <ul class="list cl">
+        {volist name="taotus" id="vo"}
+        <li>
+            <a href="/taotu/{$vo.id}">
+                <img lazysrc="__UPLOAD__/taotu/{$vo.id}/thumb.jpg" alt="{$vo.title}">
+                <div class="txtbts">{$vo.title}</div>
+            </a>
+        </li>
+        {/volist}
+    </ul>
+</div>
+
+<!-- 弹出选项 -->
+<div class="works-li" style="display:none; " id="sub-list">
+    <div class="header">
+        <h1>分类标签</h1>
+        <i class="icon-close"></i></div>
+    <div class="body">
+        <ul class="works-subnav">
+            <li><a href="/brandlistall/jigou"> 品牌大全</a></li>
+            <li><a href="/brandlistall/meinvdalei"> 美女套图</a></li>
+            <li><a href="/brandlistall/diyufenbu"> 地域风情</a></li>
+            <li><a href="/brandlistall/shencaitizheng"> 各类身材</a></li>
+            <li><a href="/brandlistall/zhuozhuangleixing"> 着装特色</a></li>
+            <li><a href="/brandlistall/tedingchangjing"> 特定场景</a></li>
+            <li><a href="/brandlistall/mingxingmote"> 明星模特</a></li>
+            <li><a href="/brandlistall/tedingleixing"> 特定类型</a></li>
+        </ul>
+        <div style="width:100%; height:100px;"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#cation').click(function () {
+            $('#sub-list').show();
+            $('html').css('overflow', 'hidden');
+        });
+
+        $('.icon-close').click(function () {
+            $('.works-li').hide();
+            $('html').css('overflow', 'auto');
+        });
+    });
+</script>
+{include file="index@pub/mfoot" /}

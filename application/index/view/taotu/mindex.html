@@ -1,0 +1,79 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{$taotu.title}</title>
+    <meta name="keywords" content="{$taotu.title}">
+    <meta name="description" content="{$site.site_name}为您提供{$taotu.title}<图片内容，看高清好看的美女图片，就上{$site.site_name}。">
+{include file="index@pub/mhead" /}
+<body class="has-panel">
+<script language="javascript" src="__JS__/showpage.js" type="text/javascript"></script>
+<div class="wp cl pos">
+    <div class="header pos">
+        <i id="panelSwitch" class="icon-nav"></i>
+        <div class="tit-t">
+            <span class="tops">栏目：<a href="/brandlistall/{$brand.cate}">{$brand.brand_name}</a></span>
+        </div>
+        <a class="avatar" href="{$site.m_url}"><img src="__IMG__/rlogo.png"></a>
+    </div>
+    <div class="pos">
+        <div class="hd-user">
+            <div class="hd-user-t">
+                <h1 id="p-title">{$taotu.title}</h1>
+            </div>
+            <i class="iconfont icon-down y"></i>
+            <span class="tag y">图片信息</span>
+        </div>
+        <div class="hd-info">
+            <div class="hd-info-i">
+                <p><i class="iconfont icon-eye"></i><span id="hot">735</span></p>
+                <p><i class="iconfont icon-comment"></i><span class="comnum">0</span></p>
+                <p id="likenum"><i class="iconfont icon-leaf"></i><span id="favor">2</span></p>
+            </div>
+            <script>
+                var hot = Math.floor(Math.random()*10000);
+                $('#hot').html(hot);
+                var comment = Math.floor(Math.random()*100);
+                $('.comnum').html(comment);
+                var favor = Math.floor(Math.random()*1000);
+                $('#favor').html(favor);
+            </script>
+            <div class="hd-info-t">
+                <p>分类：
+                    {volist name="brands" id="vo"}
+                    <span><a href="/brand/{$vo.id}">{$vo.brand_name}</a></span>
+                    {/volist}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="cl" style="margin:10px 6px 4px;color:#2b2b2b;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
+        位置 &gt; <a href="{$site.m_url}" style="color:#2b2b2b;">首页</a> &gt;
+        <a href="/brandlistall/{$brand.cate}">{$brand.brand_name}</a> >  {$taotu.title}</div>
+    <div class="cont">
+        {volist name="photos" id="vo"}
+        <img id="bigImg" src="{$vo.img_name}" alt="{$taotu.title}图片" onmouseover="SouutuIMGupNext(this)">
+        {/volist}
+        <div class="page cl">
+            {$photos->render()}
+        </div>
+    </div>
+    <div class="share cl">
+        <ul class="cl">
+            <li class="ishare"><a href="javascript:;"><i class="iconfont icon-share"></i>分享</a></li>
+            <li class="icomment"> <a href="javascript:;" id="51705" class="add-com"><i class="iconfont icon-comment"></i>评论</a> </li>
+            <li class="istar" data="addfav"><a href="javascript:;" id="fav"><i class="iconfont icon-star"></i>收藏</a></li>
+            <li class="iheart" data="addlike"> <a href="javascript:;" id="like"><i class="iconfont icon-heart"></i>赞</a></li>
+        </ul>
+    </div>
+    <div class="more">
+        <h2>相关推荐</h2>
+        <div class="cl">
+            {volist name="taotus" id="vo"}
+            <a href="/taotu/{$vo.id}">
+                <img lazysrc="__UPLOAD__/taotu/{$vo.id}/thumb.jpg">
+            </a>
+            {/volist}
+        </div>
+    </div>
+</div>
+{include file="index@pub/mfoot" /}

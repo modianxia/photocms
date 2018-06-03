@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63eec8f3-08d6-43f7-8568-b4abe0a0beab" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>swBanner</find>
+      <find>index_listc</find>
+      <find>ggtleft</find>
+      <find>title</find>
+      <find>nick_nm</find>
+      <find>$brand</find>
+      <find>tab-box</find>
+      <find>font</find>
+      <find>brands</find>
+      <find>LOG_RECORD</find>
+      <find>count</find>
+      <find>add_</find>
+      <find>container-fluid</find>
+      <find>hot</find>
+      <find>favorite</find>
+      <find>add</find>
+      <find>prevPage</find>
+      <find>brand</find>
+      <find>url</find>
+      <find>dump</find>
+      <find>getcurr</find>
+      <find>getcu</find>
+      <find>taotus</find>
+      <find>pub</find>
+      <find>Pub</find>
+      <find>thea</find>
+      <find>icon-nav</find>
+      <find>tag-list</find>
+      <find>hd-info</find>
+      <find>cation</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/public/static/img</replace>
+      <replace>&lt;i class=&quot;icon icon-time&quot;&gt;</replace>
+      <replace>__IMG__</replace>
+      <replace>brand</replace>
+      <replace>/img</replace>
+      <replace>../img</replace>
+      <replace>pub</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\wwwroot\public\static</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/application/config.php" />
+        <option value="$PROJECT_DIR$/application/index/view/pub/foot.html" />
+        <option value="$PROJECT_DIR$/application/admin/model/Admin.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Crawl.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Taotu.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/pub/nav.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/site/usermanager.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Site.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/pub/menu.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/account/login.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/crawl/taotuIndex.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/site/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/site/userlist.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/taotu/add.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/taotu/edit.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/taotu/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/crawl/photoIndex.html" />
+        <option value="$PROJECT_DIR$/application/index/view/pub/nav.html" />
+        <option value="$PROJECT_DIR$/public/static/js/wap-work.js" />
+        <option value="$PROJECT_DIR$/application/index/view/pub/mfoot.html" />
+        <option value="$PROJECT_DIR$/application/index/controller/Pub.php" />
+        <option value="$PROJECT_DIR$/extend/util/Mpage.php" />
+        <option value="$PROJECT_DIR$/application/common.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Home.php" />
+        <option value="$PROJECT_DIR$/public/static/css/wap-work.css" />
+        <option value="$PROJECT_DIR$/application/index/model/Brand.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Brand.php" />
+        <option value="$PROJECT_DIR$/application/index/controller/Taotu.php" />
+        <option value="$PROJECT_DIR$/application/route.php" />
+        <option value="$PROJECT_DIR$/application/index/view/pub/head.html" />
+        <option value="$PROJECT_DIR$/application/index/view/brand/listall.html" />
+        <option value="$PROJECT_DIR$/application/index/view/pub/mhead.html" />
+        <option value="$PROJECT_DIR$/application/index/view/brand/mlistall.html" />
+        <option value="$PROJECT_DIR$/application/index/view/brand/mnewest.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/brand/add.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/brand/edit.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Brand.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/brand/index.html" />
+        <option value="$PROJECT_DIR$/application/index/view/brand/mindex.html" />
+        <option value="$PROJECT_DIR$/application/index/view/home/index.html" />
+        <option value="$PROJECT_DIR$/application/index/view/home/mindex.html" />
+        <option value="$PROJECT_DIR$/application/index/view/taotu/index.html" />
+        <option value="$PROJECT_DIR$/application/index/view/taotu/mindex.html" />
+        <option value="$PROJECT_DIR$/application/index/view/taotu/mnewest.html" />
+        <option value="$PROJECT_DIR$/application/index/view/brand/newest.html" />
+        <option value="$PROJECT_DIR$/application/index/view/brand/index.html" />
+        <option value="$PROJECT_DIR$/application/index/view/taotu/newest.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/topthink/think-installer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/querylist" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/phpquery-single" />
+      <path value="$PROJECT_DIR$/vendor/jaeger/g-http" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/tightenco/collect" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="app.php&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/App.php&#10;LOG_RECORD&#9;null&#9;null&#10;swBanner&#9;null&#9;null&#10;app_trace&#9;null&#9;null&#10;route&#9;FILE&#9;file://D:/wwwroot/public/router.php&#10;url_html_suffix&#9;null&#9;null&#10;pag&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/Paginator.php&#10;pagi&#9;null&#9;null&#10;tem&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/Template.php&#10;#showlists&#9;null&#9;null&#10;temp&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/Template.php&#10;ex-link-con&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/App.php&#10;config&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/config&#10;version&#9;null&#9;null&#10;Config&#9;null&#9;null&#10;Facade&#9;null&#9;null&#10;template.php&#9;FILE&#9;file://D:/wwwroot/thinkphp/library/think/Template.php" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Mercurial" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wwwroot" />
+      <recent name="D:\wwwroot\public" />
+      <recent name="D:\wwwroot\application\admin\view" />
+      <recent name="D:\wwwroot\application\admin\controller" />
+      <recent name="D:\wwwroot\application\index\view\pub" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wwwroot\public\static\js" />
+      <recent name="D:\wwwroot\public\static\css" />
+      <recent name="D:\wwwroot\public\static\img" />
+      <recent name="D:\wwwroot\public\static\i" />
+      <recent name="D:\wwwroot\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63eec8f3-08d6-43f7-8568-b4abe0a0beab" name="Default" comment="" />
+      <created>1525665102515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525665102515</updated>
+      <workItem from="1525665103673" duration="471000" />
+      <workItem from="1525680365657" duration="5176000" />
+      <workItem from="1525695233576" duration="890000" />
+      <workItem from="1525699517014" duration="5257000" />
+      <workItem from="1525743865230" duration="19000" />
+      <workItem from="1525763192550" duration="6173000" />
+      <workItem from="1525838421588" duration="1864000" />
+      <workItem from="1525849070343" duration="821000" />
+      <workItem from="1525851104042" duration="2574000" />
+      <workItem from="1525856426988" duration="1804000" />
+      <workItem from="1525919404861" duration="1456000" />
+      <workItem from="1525936218180" duration="1035000" />
+      <workItem from="1526002677603" duration="21000" />
+      <workItem from="1526020994280" duration="2494000" />
+      <workItem from="1526096633971" duration="5980000" />
+      <workItem from="1526109484534" duration="7908000" />
+      <workItem from="1526125176882" duration="1489000" />
+      <workItem from="1526130321656" duration="11941000" />
+      <workItem from="1526202204569" duration="8617000" />
+      <workItem from="1526266280196" duration="17048000" />
+      <workItem from="1526303766346" duration="2737000" />
+      <workItem from="1526353543497" duration="1424000" />
+      <workItem from="1526368251865" duration="6245000" />
+      <workItem from="1526439614315" duration="2328000" />
+      <workItem from="1526453429112" duration="23000" />
+      <workItem from="1526458344773" duration="2752000" />
+      <workItem from="1526477278483" duration="4467000" />
+      <workItem from="1526528614507" duration="1452000" />
+      <workItem from="1526562756306" duration="10000" />
+      <workItem from="1526568152681" duration="7333000" />
+      <workItem from="1526575796778" duration="375000" />
+      <workItem from="1526576894237" duration="978000" />
+      <workItem from="1526577916840" duration="253000" />
+      <workItem from="1526610778943" duration="15253000" />
+      <workItem from="1526705918355" duration="14186000" />
+      <workItem from="1526744683150" duration="1114000" />
+      <workItem from="1526745933596" duration="445000" />
+      <workItem from="1526746503931" duration="104000" />
+      <workItem from="1526747295232" duration="121000" />
+      <workItem from="1526791875603" duration="22000" />
+      <workItem from="1526792529207" duration="70000" />
+      <workItem from="1526887933568" duration="171000" />
+      <workItem from="1526888518669" duration="864000" />
+      <workItem from="1526890491726" duration="108000" />
+      <workItem from="1526910915614" duration="2657000" />
+      <workItem from="1526913664661" duration="87000" />
+      <workItem from="1526973337851" duration="7354000" />
+      <workItem from="1526990103649" duration="2838000" />
+      <workItem from="1527041148729" duration="576000" />
+      <workItem from="1527042372589" duration="15090000" />
+      <workItem from="1527066519024" duration="22000" />
+      <workItem from="1527128241809" duration="10753000" />
+      <workItem from="1527178881471" duration="196000" />
+      <workItem from="1527213692964" duration="2745000" />
+      <workItem from="1527233611321" duration="591000" />
+      <workItem from="1527239790421" duration="1199000" />
+      <workItem from="1527324630700" duration="4573000" />
+      <workItem from="1527411437495" duration="4026000" />
+      <workItem from="1527420984531" duration="2000" />
+      <workItem from="1527477664427" duration="2902000" />
+      <workItem from="1527488399181" duration="6548000" />
+      <workItem from="1527499406409" duration="562000" />
+      <workItem from="1527503404918" duration="2166000" />
+      <workItem from="1527559930815" duration="15091000" />
+      <workItem from="1527673202946" duration="6481000" />
+      <workItem from="1527735210281" duration="5373000" />
+      <workItem from="1527752542843" duration="6703000" />
+      <workItem from="1527764551366" duration="2344000" />
+      <workItem from="1527817247396" duration="5590000" />
+      <workItem from="1527940060449" duration="47000" />
+      <workItem from="1528024782299" duration="189000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="252578000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19906166" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32909605" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="10" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/BaseAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/taotu/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/taotu/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/taotu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="73" column="18" lean-forward="true" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/crawl/photoIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/crawl/taotuIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/site/userlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/touchslider.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="173" column="18" lean-forward="true" selection-start-line="173" selection-start-column="18" selection-end-line="173" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/js/wap-work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Pub.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/pub/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/util/Page2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="197" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/util/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extend/util/Mpage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/css/wap-work.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/pub/mfoot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/model/Brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Taotu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/brand/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="92" column="26" selection-start-line="70" selection-start-column="19" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/brand/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/brand/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/controller/Brand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/brand/mindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/brand/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/brand/listall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/brand/mlistall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-614">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/brand/mnewest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/brand/newest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1440">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/home/mindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/taotu/mnewest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/taotu/newest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/taotu/mindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="112" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/taotu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

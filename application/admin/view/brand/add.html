@@ -1,0 +1,108 @@
+{include file="admin@pub/head" /}
+
+<body data-type="widgets">
+<script src="__JS__/theme.js"></script>
+<div class="am-g tpl-g">
+    <!-- 头部 -->
+    {include file="admin@pub/nav" /}
+    <!-- 侧边导航栏 -->
+    {include file="admin@pub/menu" /}
+
+    <!-- 内容区域 -->
+    <div class="tpl-content-wrapper">
+
+        <div class="container-fluid am-cf">
+            <div class="row">
+                <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
+                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span>
+                        分类新增
+                        <small>brand edit</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget am-cf">
+            <div class="widget-head am-cf">
+                <div class="widget-title am-fl">分类新增</div>
+            </div>
+            <div class="widget-body am-fr">
+                <form action="{:url('brand/addsave')}" method="get" class="am-form tpl-form-line-form">
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">分类名称 <span
+                                class="tpl-form-line-small-title">brand name</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="brand_name" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">分类拼音 <span
+                                class="tpl-form-line-small-title">nick name</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="nick_name" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">分类描述 <span
+                                class="tpl-form-line-small-title">brand des</span></label>
+                        <div class="am-u-sm-9">
+                            <textarea class="" rows="10" name="brand_des"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">大类拼音 <span
+                                class="tpl-form-line-small-title">cate</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="cate" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">大类名称 <span
+                                class="tpl-form-line-small-title">cate_des</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="cate_des" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">标题 <span
+                                class="tpl-form-line-small-title">title</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="title" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">关键词 <span
+                                class="tpl-form-line-small-title">keyword</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="keyword" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">关键词 <span
+                                class="tpl-form-line-small-title">description</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="description" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <div class="am-u-sm-9 am-u-sm-push-3">
+                            <input type="submit" value="保存" class="am-btn am-btn-primary tpl-btn-bg-color-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+{include file="admin@pub/foot" /}

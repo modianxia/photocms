@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{$site.site_name}最新美女图片_top100</title>
+    <meta name="keywords" content="{$site.site_name}最新美女图片_top100">
+    <meta name="description" content="{$site.site_name}最新美女图片_top100。">
+{include file="index@pub/head" /}
+<body>
+{include file="index@pub/nav" /}
+<div class="index_listc">
+    <div class="camTitle">
+        <div class="camNavC">
+            <a href="{:url('taotu/newest')}" class="selected">最新更新T100</a>
+        </div>
+    </div>
+    <div class="longTop">您现在的位置 &gt; <a href="{$site.pc_url}">首页</a> &gt;
+        <a href="{:url('taotu/newest')}">最新更新T100</a></div>
+    <div class="camWholeBox borderTop" id="load-img">
+        <ul class="layout camWholeBoxUl">
+            {volist name="taotus" id="vo"}
+            <li>
+                <a href="{:url('taotu/index',['id'=>$vo.id])}" class="itemimg" title="{$vo.title}" target="_blank">
+                    <img src="__UPLOAD__/taotu/{$vo.id}/thumb.jpg" width="196" height="265" alt="{$vo.title}"
+                         style="display: inline;">
+                    <div class="itemset-num">
+                        <span class="num">{$vo.count}</span>
+                        <span class="text">张</span>
+                    </div>
+                </a>
+                <div class="camLiCon">
+                    <div class="camLiTitleC hot">
+                        <p>
+                            <a href="{:url('taotu/index',['id'=>$vo.id])}" title="{$vo.title}" target="_blank">{$vo.title}</a>
+                        </p>
+                    </div>
+                    <div class="camLiDes">
+                        <span class="mr3"><i class="icon iconfont fontico"></i>{$vo.update_time}</span>
+
+                    </div>
+                </div>
+            </li>
+            {/volist}
+        </ul>
+    </div>
+</div>
+{include file="index@pub/foot" /}
