@@ -63,7 +63,7 @@ class Brand extends BaseAdmin
         $brand = BrandModel::get($request->get('id'));
         $result = $brand->delete();
         if ($result){
-            $this->success('删除成功');
+            $this->success('删除成功','index','',1);
         }else {
             $this->error('删除失败');
         }
@@ -76,19 +76,45 @@ class Brand extends BaseAdmin
 
     public function addsave(){
         $brand = new BrandModel();
-        $brand->brand_name = input('get.brand_name');
-        $brand->nick_name = input('get.nick_name');
-        $brand->brand_des = input('get.brand_des');
-        $brand->cate = input('get.cate');
-        $brand->cate_des = input('get.cate_des');
-        $brand->title = input('get.title');
-        $brand->keyword = input('get.keyword');
+        $brand->brand_name = input('post.brand_name');
+        $brand->nick_name = input('post.nick_name');
+        $brand->brand_des = input('post.brand_des');
+        $brand->cate = input('post.cate');
+        $brand->cate_des = input('post.cate_des');
+        $brand->title = input('post.title');
+        $brand->keyword = input('post.keyword');
         $brand->description = input('get.description');
+        $validate = validate('app\admin\model\Brand');
+        if (!$validate->check($brand)){
+            $this->error('表单没按要求填写');
+        }
         $result = $brand->save();
+
+        $dir = ROOT_PATH . 'public/static/upload/brand/'.$brand->nick_name;
+        if (!file_exists($dir)){
+            mkdir($dir,0777,true);
+        }
+        $banner = $this->request->file('banner');
+        $banner_info = $banner->validate(['size'=>512000,'ext'=>'jpg'])
+            ->move($dir,'banner.jpg');
+
+        $mbanner = $this->request->file('mbanner');
+        $mbanner_info = $mbanner->validate(['size'=>204800,'ext'=>'jpg'])
+            ->move($dir,'mbanner.jpg');
+
+        $thumb = $this->request->file('thumb');
+        $thumb_info = $thumb->validate(['size'=>102400,'ext'=>'jpg'])
+            ->move($dir,'thumb.jpg');
+
         if ($result){
-            $this->success('添加成功','index','',1);
+            if ($banner_info&&$mbanner_info&&$thumb_info){
+                $this->success('添加成功','index','',1);
+            }else{
+                $this->error('添加成功，但图片上传失败，请编辑该项上传');
+            }
         }else {
             $this->error('添加失败');
         }
     }
+
 }

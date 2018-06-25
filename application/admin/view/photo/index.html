@@ -1,0 +1,20 @@
+{include file="admin@pub/head" /}
+<link rel="stylesheet" type="text/css" href="__CSS__/webuploader.css">
+<body>
+<hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
+<a href="/admin" class="am-btn am-btn-primary ">返回</a>
+<hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
+<ul data-am-widget="gallery" class="am-gallery am-avg-sm-12 am-gallery-default" data-am-gallery="{ pureview: true }">
+    {volist name="photos" id="vo"}
+    <li>
+        <div class="am-gallery-item">
+            <a href="{$vo.img_name}" class="">
+                <img src="{$vo.img_name}" alt=""/>
+            </a>
+            <a href="{:url('photo/delete',['id'=>$vo.id])}">删除</a>
+        </div>
+    </li>
+    {/volist}
+</ul>
+
+{include file="admin@pub/foot" /}

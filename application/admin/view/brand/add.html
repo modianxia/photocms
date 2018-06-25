@@ -27,7 +27,7 @@
                 <div class="widget-title am-fl">分类新增</div>
             </div>
             <div class="widget-body am-fr">
-                <form action="{:url('brand/addsave')}" method="get" class="am-form tpl-form-line-form">
+                <form action="{:url('brand/addsave')}" enctype="multipart/form-data" method="post" class="am-form tpl-form-line-form">
                     <div class="am-form-group">
                         <label  class="am-u-sm-3 am-form-label">分类名称 <span
                                 class="tpl-form-line-small-title">brand name</span></label>
@@ -89,6 +89,33 @@
                                 class="tpl-form-line-small-title">description</span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="description" value="">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">banner图 <span
+                                class="tpl-form-line-small-title">banner image</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="banner" />
+                            <small>图片最大500kb，只支持jpg格式</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">手机banner图 <span
+                                class="tpl-form-line-small-title">mobile banner image</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="mbanner" />
+                            <small>图片最大200kb，只支持jpg格式</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">缩略图 <span
+                                class="tpl-form-line-small-title">thumb image</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="thumb" />
+                            <small>图片最大100kb，只支持jpg格式</small>
                         </div>
                     </div>
 

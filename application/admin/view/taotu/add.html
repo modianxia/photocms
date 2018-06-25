@@ -27,7 +27,7 @@
                 <div class="widget-title am-fl">添加套图</div>
             </div>
             <div class="widget-body am-fr">
-                <form action="{:url('taotu/addsave')}" method="post" class="am-form tpl-form-line-form">
+                <form action="{:url('taotu/addsave')}" enctype="multipart/form-data" method="post" class="am-form tpl-form-line-form">
                     <div class="am-form-group">
                         <label class="am-u-sm-3 am-form-label">添加套图 <span
                                 class="tpl-form-line-small-title">title</span></label>
@@ -42,7 +42,7 @@
                                 class="tpl-form-line-small-title">tags</span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="tags" value="">
-                            <small>输入套图标签</small>
+                            <small>输入套图标签，多个标签用|分隔</small>
                         </div>
                     </div>
 
@@ -51,7 +51,16 @@
                                 class="tpl-form-line-small-title">source url</span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="source_url" value="">
-                            <small>输入套图来源</small>
+                            <small>输入套图来源，用于采集</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">缩略图 <span
+                                class="tpl-form-line-small-title">thumb image</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="thumb" />
+                            <small>图片最大100kb，只支持jpg格式</small>
                         </div>
                     </div>
 

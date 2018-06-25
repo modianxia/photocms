@@ -51,7 +51,7 @@
         <a href="/brandlistall/{$brand.cate}">{$brand.brand_name}</a> >  {$taotu.title}</div>
     <div class="cont">
         {volist name="photos" id="vo"}
-        <img id="bigImg" src="{$vo.img_name}" alt="{$taotu.title}图片" onmouseover="SouutuIMGupNext(this)">
+        <img id="bigImg" src="__UPLOAD__/photos/{$vo.taotu_id}/{$vo.id}.jpg" alt="{$taotu.title}图片" onmouseover="SouutuIMGupNext(this)">
         {/volist}
         <div class="page cl">
             {$photos->render()}

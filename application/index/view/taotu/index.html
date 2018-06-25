@@ -6,6 +6,10 @@
     <meta name="description" content="{$site.site_name}为您提供{$taotu.title}<图片内容，看高清好看的美女图片，就上{$site.site_name}。">
 {include file="index@pub/head" /}
 <script language="javascript" src="__JS__/showpage.js" type="text/javascript"></script>
+</head>
+<body>
+{include file="index@pub/nav" /}
+
 
 <div class="container mt20">
     <div class="longConWhite">
@@ -34,7 +38,7 @@
                     {volist name="photos" id="vo"}
                     <li>
                         <img id="bigImg"
-                             src="{$vo.img_name}"
+                             src="__UPLOAD__/photos/{$vo.taotu_id}/{$vo.id}.jpg"
                              alt="{$taotu.title}"
                              onmouseover="SouutuIMGupNext(this)" class="mb10" title=""
                              style="">

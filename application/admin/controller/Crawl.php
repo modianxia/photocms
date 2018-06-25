@@ -29,7 +29,7 @@ class Crawl extends BaseAdmin
     }
 
     //爬取写真页
-    protected function taotu(Request $request)
+    public function taotu()
     {
         $ql = QueryList::getInstance();
         $rules1 = array(
@@ -39,31 +39,32 @@ class Crawl extends BaseAdmin
             'img' => ['a>img', 'lazysrc'],
             'url' => ['a', 'href']
         );
-        $raw_url = $request->param('url');
-        $cate = $request->param('cate');
-        $start = intval($request->param('start'));
-        $end = intval($request->param('end'));
+        $raw_url = input('get.url');
+        $cate = input('get.cate');
+        $start = intval(input('get.start'));
+        $end = intval(input('get.end'));
         for ($i = $start; $i <= $end; $i++) {
             if ($i==1){
-                $url = str_replace('/{i}_html','',$raw_url);
+                $url = str_replace('/index_{i}.html','',$raw_url);
             }
             else{
                 $url = str_replace('{i}', $i, $raw_url);
             }
             $html = $ql->get($url)->getHtml();
-            $data = $ql->html($html)->rules($rules1)->range('li.min-h-imgall')->query()->getData()->all();
+            $data = $ql->html($html)->rules($rules1)->range('ul.picpos__1 layout camWholeBoxUl>li')->query()->getData()->all();
             foreach ($data as $item) {
                 $taotu = TaotuModel::where('title', $item['title'])->find();
                 if ($taotu) { //如果存在该套图，则update
                     if (!strstr($taotu->tags, $cate)) {
                         $taotu->tags = $taotu->tags . '|' . $cate;
+                        $taotu->source_url = 'http://59pic.92demo.com'.$item['url'];
                     }
                     $taotu->save();
                 } else { //否则新增
                     $taotu = new TaotuModel();
                     $taotu->title = $item['title'];
                     $taotu->tags = $cate;
-                    $taotu->source_url = $item['url'];
+                    $taotu->source_url = 'http://59pic.92demo.com'.$item['url'];
                     $taotu->save();
                     $this->saveImg($taotu->id, $item['img']);
                 }
@@ -76,16 +77,19 @@ class Crawl extends BaseAdmin
     protected function saveImg($taotu_id, $img)
     {
         if (!is_dir($taotu_id)) { //如果目录不存在，则创建目录
-            mkdir('./static/upload/taotu/' . $taotu_id, '0777');
+            mkdir('./public/static/upload/taotu/' . $taotu_id, '0777');
         }
         try{
+            $headers = array();
+            $headers[] = 'Cookie: safedog-flow-item=';
+            $headers[] = 'Host: 59pic.92demo.com';
             $ch = curl_init();
-            curl_setopt($ch, CURLOPT_POST, 0);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
             curl_setopt($ch, CURLOPT_URL, $img);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             $file_content = curl_exec($ch);
             curl_close($ch);
-            $downloaded_file = fopen('./static/upload/taotu/' . $taotu_id . '/thumb.jpg', 'w');
+            $downloaded_file = fopen('./public/static/upload/taotu/' . $taotu_id . '/thumb.jpg', 'w');
             fwrite($downloaded_file, $file_content);
             fclose($downloaded_file);
         }catch (Error $e){
@@ -109,7 +113,6 @@ class Crawl extends BaseAdmin
         $this->assign('title', '列表采集');
         return view('photoIndex');
     }
-
     public function photo(){
         $start = input('get.start');
         $end = input('get.end');
@@ -131,7 +134,6 @@ class Crawl extends BaseAdmin
         $ql->destruct();
         return view('photoIndex');
     }
-
     protected function getPhoto($url,$id){
         $ql = new QueryList();
         $html = $ql->get($url)->getHtml();

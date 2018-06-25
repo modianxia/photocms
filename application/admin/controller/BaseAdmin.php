@@ -18,7 +18,7 @@ class BaseAdmin extends Controller
         $this->_admin = session('aimote_admin');
         // 未登录的用户不允许访问
         if(!$this->_admin){
-            $this->success('请登录','admin/account/login');
+            $this->success('请登录','admin/account/login','',1);
         }
         $this->assign('username',$this->_admin);
         // 判断用户是否有权限

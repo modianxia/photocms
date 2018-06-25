@@ -44,10 +44,19 @@ class Taotu extends BaseAdmin
         $taotu->tags = input('post.tags');
         $taotu->source_url = input('post.source_url');
         $result = $taotu->save();
+        $file = $this->request->file('thumb');
+        $info = $file->validate(['size'=>102400,'ext'=>'jpg'])
+            ->move(ROOT_PATH . 'public/static/upload/taotu/'.$taotu->id.'/','thumb.jpg');
         if($result){
-            //设置成功后跳转页面的地址，默认的返回页面是$_SERVER['HTTP_REFERER']
-            $this->success('编辑成功','index','',1);
+            if ($info){
+                $this->success('编辑成功','index','',1);
+            }else{
+                $this->error('编辑成功，但图片上传失败，请编辑该项上传');
+            }
         } else {
+            if ($info){
+                $this->success('修改缩略图成功','index','',1);
+            }
             //错误页面的默认跳转页面是返回前一页，通常不需要设置
             $this->error('编辑失败');
         }
@@ -64,9 +73,15 @@ class Taotu extends BaseAdmin
         $taotu->tags = input('post.tags');
         $taotu->source_url = input('post.source_url');
         $result = $taotu->save();
+        $file = request()->file('thumb');
+        $info = $file->validate(['size'=>102400,'ext'=>'jpg'])
+             ->move(ROOT_PATH . 'public/static/upload/taotu/'.$taotu->id.'/','thumb.jpg');
         if($result){
-            //设置成功后跳转页面的地址，默认的返回页面是$_SERVER['HTTP_REFERER']
-            $this->success('添加成功','index','',1);
+            if ($info){
+                $this->success('添加成功','index','',1);
+            }else{
+                $this->error('添加成功，但图片上传失败，请编辑该项上传');
+            }
         } else {
             //错误页面的默认跳转页面是返回前一页，通常不需要设置
             $this->error('添加失败');

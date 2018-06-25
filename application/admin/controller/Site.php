@@ -31,6 +31,7 @@ class Site extends BaseAdmin
         $site = new SiteModel();
         $site->site_name = '爱模特';
         $site->pc_url = 'localhost:8080';
+        $site->m_url = 'localhost:8080';
         $site->pc_logo = '__IMG__/logo.png';
         $site->m_logo = '__IMG__/mlogo.png';
         $site->title = '高清套图超市分享推女郎、秀人网、美媛馆、蕾丝猫等美女套图 - 爱模特';
@@ -54,6 +55,7 @@ class Site extends BaseAdmin
         }
         $site->site_name = input('post.site_name');
         $site->pc_url = input('post.pc_url');
+        $site->m_url = input('post.m_url');
         $site->pc_logo = input('post.pc_logo');
         $site->m_logo = input('post.m_logo');
         $site->title = input('post.title');

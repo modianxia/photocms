@@ -13,13 +13,16 @@ use app\index\model\Taotu as TaotuModel;
 use app\index\model\Site as SiteModel;
 use app\index\model\Brand as BrandModel;
 use app\index\model\Photo as PhotoModel;
+use think\Db;
 
 
 class Taotu extends Controller
 {
     public function index($id){
         $site = SiteModel::get(0);
-        $taotus = TaotuModel::where('id','>',0)->limit(9)->select();
+        $taotus = Db::query("SELECT ad1.id,title,update_time
+FROM taotu AS ad1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM taotu)-(SELECT MIN(id) FROM taotu))+(SELECT MIN(id) FROM taotu)) AS id)
+ AS t2 WHERE ad1.id >= t2.id ORDER BY ad1.id LIMIT 9");
         $taotu = TaotuModel::get($id); //TaotuModel::get($id);
         $tags = explode("|",$taotu->tags);
         $brands = BrandModel::where('brand_name','in',$tags)->select();
