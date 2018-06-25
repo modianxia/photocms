@@ -10,7 +10,7 @@ namespace app\admin\controller;
 
 use app\index\model\Site as SiteModel;
 use app\admin\model\Admin as AdminModel;
-use think\Controller;
+use think\Request;
 
 class Site extends BaseAdmin
 {
@@ -77,5 +77,30 @@ class Site extends BaseAdmin
         $this->assign('userlist',$list);
         $this->assign('title','管理员管理');
         return $this->fetch();
+    }
+
+    public function admin(){
+        $username = session('aimote_admin');
+        $user = AdminModel::where('username',$username)->find();
+        $this->assign('user',$user);
+        $this->assign('title','管理员管理');
+        return $this->fetch();
+    }
+
+    public function adminsave(Request $request){
+        $id = $request->post('id');
+        $username = $request->post('username');
+        $password = $request->post('password');
+        $user = AdminModel::get($id);
+        $user->username = $username;
+        if (!empty($password)){
+            $user->password = md5($password);
+        }
+        $result = $user->save();
+        if ($result){
+            $this->success('修改成功','admin','',1);
+        }else{
+            $this->error('修改失败');
+        }
     }
 }

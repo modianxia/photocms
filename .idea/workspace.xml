@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63eec8f3-08d6-43f7-8568-b4abe0a0beab" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/application/admin/view/site/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Brand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Taotu.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Taotu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/model/Brand.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/brand/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/brand/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/brand/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/brand/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/photo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/photo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/controller/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/menu.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,14 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Taotu.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/index/controller/Taotu.php">
+      <file leaf-file-name="Site.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-36">
-              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="420">
+              <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
               <folding>
-                <element signature="e#119#145#0#PHP" expanded="true" />
+                <element signature="e#121#159#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/site/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -96,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/admin/model/Admin.php" />
         <option value="$PROJECT_DIR$/application/admin/view/pub/nav.html" />
         <option value="$PROJECT_DIR$/application/admin/view/site/usermanager.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Account.php" />
@@ -132,12 +136,9 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Crawl.php" />
         <option value="$PROJECT_DIR$/application/admin/view/taotu/add.html" />
         <option value="$PROJECT_DIR$/application/admin/view/taotu/edit.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" />
         <option value="$PROJECT_DIR$/application/admin/view/account/login.html" />
         <option value="$PROJECT_DIR$/application/index/model/Brand.php" />
         <option value="$PROJECT_DIR$/application/admin/model/Brand.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/pub/menu.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Site.php" />
         <option value="$PROJECT_DIR$/application/index/view/taotu/mindex.html" />
         <option value="$PROJECT_DIR$/application/index/view/taotu/index.html" />
         <option value="$PROJECT_DIR$/application/index/controller/Taotu.php" />
@@ -147,6 +148,10 @@
         <option value="$PROJECT_DIR$/application/admin/controller/Taotu.php" />
         <option value="$PROJECT_DIR$/application/admin/view/photo/index.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Photo.php" />
+        <option value="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/pub/menu.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/site/admin.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Site.php" />
       </list>
     </option>
   </component>
@@ -197,6 +202,42 @@
               <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
               <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pub" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wwwroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wwwroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -337,16 +378,19 @@
       <workItem from="1529816899683" duration="1060000" />
       <workItem from="1529830873956" duration="186000" />
       <workItem from="1529893094488" duration="10897000" />
+      <workItem from="1529915998558" duration="1540000" />
+      <workItem from="1529917623202" duration="219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290993000" />
+    <option name="totallyTimeSpent" value="292752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24530831" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -564,20 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/BaseAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/account/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -596,20 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="59" column="45" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -634,22 +650,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/model/Brand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/model/Brand.php" />
     <entry file="file://$PROJECT_DIR$/application/admin/view/brand/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="68" column="26" selection-start-line="54" selection-start-column="20" selection-end-line="68" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#8;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#9;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#10;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,11 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="67" column="109" selection-start-line="67" selection-start-column="109" selection-end-line="67" selection-end-column="109" />
-          <folding>
-            <element signature="n#div#6;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#7;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" />
-            <element signature="n#div#8;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,9 +671,6 @@
           <caret line="53" column="95" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Pub.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/taotu/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -689,16 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/model/Photo.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Brand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="131" column="64" selection-start-line="131" selection-start-column="58" selection-end-line="131" selection-end-column="64" />
-          <folding>
-            <element signature="e#121#161#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,10 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#474#480#1" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#form#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,9 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
-          <folding>
-            <element signature="e#119#159#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,18 +718,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="e#120#141#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/index/controller/Taotu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="18">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/BaseAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/site/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="134" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/site/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="30" column="68" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
           <folding>
-            <element signature="e#119#145#0#PHP" expanded="true" />
+            <element signature="e#121#159#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
