@@ -31,7 +31,7 @@
                     <input type="hidden" name="id" value="{$brand.id}">
                     <div class="am-form-group">
                         <label class="am-u-sm-3 am-form-label">分类名称 <span
-                                class="tpl-form-line-small-title">brand name</span></label>
+                                class="tpl-form-line-small-title">必填</span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="brand_name" value="{$brand.brand_name}">
                         </div>
@@ -39,7 +39,7 @@
 
                     <div class="am-form-group">
                         <label class="am-u-sm-3 am-form-label">分类拼音 <span
-                                class="tpl-form-line-small-title">nick name</span></label>
+                                class="tpl-form-line-small-title">必填</span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="nick_name" value="{$brand.nick_name}">
                         </div>
@@ -47,15 +47,31 @@
 
                     <div class="am-form-group">
                         <label class="am-u-sm-3 am-form-label">分类描述 <span
-                                class="tpl-form-line-small-title">brand des</span></label>
+                                class="tpl-form-line-small-title">必填</span></label>
                         <div class="am-u-sm-9">
                             <textarea class="" rows="10" name="brand_des">{$brand.brand_des}</textarea>
                         </div>
                     </div>
 
                     <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">大类拼音 <span
+                                class="tpl-form-line-small-title">必填</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="cate" value="{$brand.cate}">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label  class="am-u-sm-3 am-form-label">大类名称 <span
+                                class="tpl-form-line-small-title">必填</span></label>
+                        <div class="am-u-sm-9">
+                            <input type="text" class="tpl-form-input" name="cate_des" value="{$brand.cate_des}">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
                         <label  class="am-u-sm-3 am-form-label">标题 <span
-                                class="tpl-form-line-small-title">title</span></label>
+                                class="tpl-form-line-small-title"></span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="title" value="{$brand.title}">
                         </div>
@@ -63,7 +79,7 @@
 
                     <div class="am-form-group">
                         <label  class="am-u-sm-3 am-form-label">关键词 <span
-                                class="tpl-form-line-small-title">keyword</span></label>
+                                class="tpl-form-line-small-title"></span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="keyword" value="{$brand.keyword}">
                         </div>
@@ -71,9 +87,36 @@
 
                     <div class="am-form-group">
                         <label  class="am-u-sm-3 am-form-label">关键词 <span
-                                class="tpl-form-line-small-title">description</span></label>
+                                class="tpl-form-line-small-title"></span></label>
                         <div class="am-u-sm-9">
                             <input type="text" class="tpl-form-input" name="description" value="{$brand.description}">
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">banner图 <span
+                                class="tpl-form-line-small-title"></span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="banner" />
+                            <small>图片最大500kb，只支持jpg格式</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">手机banner图 <span
+                                class="tpl-form-line-small-title"></span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="mbanner" />
+                            <small>图片最大200kb，只支持jpg格式</small>
+                        </div>
+                    </div>
+
+                    <div class="am-form-group">
+                        <label class="am-u-sm-3 am-form-label">缩略图 <span
+                                class="tpl-form-line-small-title"></span></label>
+                        <div class="am-u-sm-9">
+                            <input type="file" class="tpl-form-input" name="thumb" />
+                            <small>图片最大100kb，只支持jpg格式</small>
                         </div>
                     </div>
 

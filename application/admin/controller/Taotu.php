@@ -10,6 +10,7 @@ namespace app\admin\controller;
 
 use app\index\model\Taotu as TaotuModel;
 use think\Controller;
+use think\Request;
 
 class Taotu extends BaseAdmin
 {
@@ -25,8 +26,8 @@ class Taotu extends BaseAdmin
         return view();
     }
 
-    public function edit(){
-        $taotu = TaotuModel::get(input('get.id'));
+    public function edit(Request $request){
+        $taotu = TaotuModel::get($request->get('id'));
         if (!$taotu){
             $this->error('找不到该套图！');
         }
@@ -35,24 +36,23 @@ class Taotu extends BaseAdmin
         return view();
     }
 
-    public function editsave(){
-        $taotu = TaotuModel::get(input('post.id'));
+    public function editsave(Request $request){
+        $taotu = TaotuModel::get($request->post('id'));
         if (!$taotu){
             $this->error('找不到该套图！');
         }
-        $taotu->title = input('post.title');
-        $taotu->tags = input('post.tags');
-        $taotu->source_url = input('post.source_url');
+        $taotu->title = $request->post('title');
+        $taotu->tags = $request->post('tags');
+        $taotu->source_url = $request->post('source_url');
         $result = $taotu->save();
-        $file = $this->request->file('thumb');
-        $info = $file->validate(['size'=>102400,'ext'=>'jpg'])
-            ->move(ROOT_PATH . 'public/static/upload/taotu/'.$taotu->id.'/','thumb.jpg');
+        $file = $request->file('thumb');
+        $info = null;
+        if ($file){
+            $info = $file->validate(['size'=>102400,'ext'=>'jpg'])
+                ->move(ROOT_PATH . 'public/static/upload/taotu/'.$taotu->id.'/','thumb.jpg');
+        }
         if($result){
-            if ($info){
-                $this->success('编辑成功','index','',1);
-            }else{
-                $this->error('编辑成功，但图片上传失败，请编辑该项上传');
-            }
+            $this->success('编辑成功','index','',1);
         } else {
             if ($info){
                 $this->success('修改缩略图成功','index','',1);
@@ -67,20 +67,23 @@ class Taotu extends BaseAdmin
         return view();
     }
 
-    public function addsave(){
+    public function addsave(Request $request){
         $taotu = new TaotuModel();
-        $taotu->title = input('post.title');
-        $taotu->tags = input('post.tags');
-        $taotu->source_url = input('post.source_url');
+        $taotu->title = $request->post('title');
+        $taotu->tags = $request->post('tags');
+        $taotu->source_url = $request->post('source_url');
         $result = $taotu->save();
-        $file = request()->file('thumb');
-        $info = $file->validate(['size'=>102400,'ext'=>'jpg'])
-             ->move(ROOT_PATH . 'public/static/upload/taotu/'.$taotu->id.'/','thumb.jpg');
+        $file = $request->file('thumb');
+        $info = null;
+        if ($file){
+            $info = $file->validate(['size'=>102400,'ext'=>'jpg'])
+                ->move(ROOT_PATH . 'public/static/upload/taotu/'.$taotu->id.'/','thumb.jpg');
+        }
         if($result){
             if ($info){
                 $this->success('添加成功','index','',1);
             }else{
-                $this->error('添加成功，但图片上传失败，请编辑该项上传');
+                $this->error('添加成功，但图片未上传，请编辑该项上传');
             }
         } else {
             //错误页面的默认跳转页面是返回前一页，通常不需要设置
@@ -88,8 +91,8 @@ class Taotu extends BaseAdmin
         }
     }
 
-    public function delete(){
-        $taotu = TaotuModel::get(input('get.id'));
+    public function delete(Request $request){
+        $taotu = TaotuModel::get($request->get('id'));
         if (!$taotu){
             $this->error('找不到该套图！');
         }

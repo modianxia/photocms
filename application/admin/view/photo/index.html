@@ -1,17 +1,22 @@
 {include file="admin@pub/head" /}
-<link rel="stylesheet" type="text/css" href="__CSS__/webuploader.css">
 <body>
 <hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
-<a href="/admin" class="am-btn am-btn-primary ">返回</a>
+<a href="index" class="am-btn am-btn-primary ">返回</a>
+<hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
+<form action="{:url('upload')}" enctype="multipart/form-data" method="post">
+    <input type="hidden" value="{$taotu_id}" name="taotu_id">
+    <input type="file" name="image[]" multiple="multiple"/> <br>
+    <input type="submit" value="上传" />&nbsp;<span style="color: red">图片大小不要超过500kb，格式只能是jpg</span>
+</form>
 <hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
 <ul data-am-widget="gallery" class="am-gallery am-avg-sm-12 am-gallery-default" data-am-gallery="{ pureview: true }">
     {volist name="photos" id="vo"}
     <li>
         <div class="am-gallery-item">
-            <a href="{$vo.img_name}" class="">
-                <img src="{$vo.img_name}" alt=""/>
+            <a href="__UPLOAD__/photos/{$vo.taotu_id}/{$vo.id}.jpg" class="">
+                <img src="__UPLOAD__/photos/{$vo.taotu_id}/{$vo.id}.jpg" alt=""/>
             </a>
-            <a href="{:url('photo/delete',['id'=>$vo.id])}">删除</a>
+            <a href="/admin/photo/delete?id={$vo.id}&taotu_id={$taotu_id}">删除</a>
         </div>
     </li>
     {/volist}
